@@ -4,17 +4,23 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <header id="page-title">
+      <h1>Hackier News</h1>
+      <p>unofficial UI for hacker news</p>
+    </header>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  padding: 0px;
+  margin: 0px;
 }
 
 #nav {
@@ -28,5 +34,9 @@
       color: #42b983;
     }
   }
+}
+
+#page-title {
+  color: #FF6701;
 }
 </style>
